@@ -22,10 +22,14 @@ nav {
 }
 nav#vertical { width: 20vw; }
 nav ul {
-  /* Afegir codi aquí */
+ 
 }
 nav#horizontal ul {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 3.5rem;
+  padding: 0 1rem;
 }
 nav#vertical ul {
   /* Afegir codi aquí per l'EXTRA */
@@ -35,7 +39,8 @@ li {
   height: 100%;
 }
 nav#horizontal li {
-  /* Afegir codi aquí */
+    display: flex;
+  align-items: center;
 }
 nav#vertical li {
   width: 100%;
@@ -64,4 +69,27 @@ span.material-icons {
 nav#horizontal li#logo img {
   max-width: 80%;
   max-height: 80%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between; /* separa el primero a la izquierda y el grupo de los otros tres a la derecha */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  margin-right: auto; /* empuja el resto de los elementos hacia la derecha */
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+ul li img {
+  height: 40px; /* ajusta el tamaño del logo según necesites */
 }
